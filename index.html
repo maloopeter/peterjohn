@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PortFolio</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div class="background">
+
+	<div class="nav">
+		<a class="a active" href="#">HOME</a>
+		<a class="b" href="#">ABOUT</a>
+			</div>
+
+	<div class="content">
+
+	<div class="home">
+	<h1>Peter John Patricio</h1>
+	<h3>Future Graphic Designer</h3>
+	
+</div>
+</div>
+<div class="aboutus">
+	<p><b>Hello Friends</b></p>
+	My name is Peter John Patricio currently taking Bachelor of Science in Computer Science in Cavite State University - Silang Campus.<br>
+	 My hobby is watching tutorial for graphical designing.My dream is to be a successful graphic designer.
+
+</div>
+</div>
+	
+
+<script type="text/javascript"  src="java.js"></script>
+<script type=" text/javascript">
+
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert("aaaaaaa");
+			var selected =$(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+
+		var $a = $('.a'),
+		$b = $('.b'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutus = $('.aboutus');
+		
+
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutus.fadeOut();
+			
+		});
+		$b.click(function(){
+			$aboutus.fadeIn();
+			$home.fadeOut();
+			
+		});
+		
+	});
+</script>
+</body>
+</html>
